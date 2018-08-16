@@ -970,6 +970,8 @@ body {
 
 .section-premium {
   background-color: #fff; }
+  .section-premium .premium-img {
+    width: 100%; }
   .section-premium .premium-features {
     position: relative;
     margin-bottom: 3rem; }
