@@ -28,26 +28,26 @@ $(document).ready(function () {
     $('#section-about').waypoint(function (direction) {
         $('#section-about').addClass('animated fadeIn');
     }, {
-        offset: '30%'
+        offset: '60%'
     });
 
     $('#service-box-animation').waypoint(function (direction) {
         $('#service-box-animation').addClass('animated fadeInRight');
     }, {
-        offset: '40%'
+        offset: '60%'
     });
 
     $('.projects').waypoint(function (direction) {
         $('.projects').addClass('animated zoomIn');
     }, {
-        offset: '40%'
+        offset: '70%'
     });
 
 
     $('.team').waypoint(function (direction) {
         $('.team').addClass('animated bounceIn');
     }, {
-        offset: '30%'
+        offset: '80%'
     });
 
     $('.logo-box').waypoint(function (direction) {
@@ -59,7 +59,7 @@ $(document).ready(function () {
     $('.price-card').waypoint(function (direction) {
         $('.price-card').addClass('animated bounceIn');
     }, {
-        offset: '30%'
+        offset: '80%'
     });
     // Fun facts animation
     $('.facts__number').counterUp({
