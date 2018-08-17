@@ -11,7 +11,7 @@ $(document).ready(function () {
                 location.hostname == this.hostname
             ) {
                 // Figure out element to scroll to
-                var target = $(this.hash);
+                let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 // Does a scroll target exist?
                 if (target.length) {
@@ -66,4 +66,19 @@ $(document).ready(function () {
         delay: 30,
         time: 2000
     });
+
+    //Category
+
+    $('.btn-tag').click(function(){
+        let tag = $(this).attr('data-category');
+        console.log(tag);
+
+        $('.projects-box').css('display', 'none');
+        selector = '.projects-box'
+        if (tag != "all") {
+            selector += '[data-category="'+ tag + '"]';
+        } 
+
+        $(selector).fadeIn(800);
+    })
 });

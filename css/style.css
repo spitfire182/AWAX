@@ -255,6 +255,29 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-tag {
+  background-color: inherit;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 1.5rem 1rem 1rem 1rem;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: .5rem solid transparent;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all .5s; }
+  .btn-tag:hover {
+    border-bottom: 0.5rem solid #b88b58;
+    background-color: inherit;
+    transform: translateY(0);
+    box-shadow: none; }
+  .btn-tag:focus {
+    border-bottom: 0.5rem solid #b88b58;
+    transform: translateY(0);
+    box-shadow: none; }
+
 .form__group {
   position: relative;
   float: left;
@@ -484,31 +507,17 @@ body {
     .tags {
       display: none; } }
   .tags__item {
-    margin: 1rem;
+    margin: 0 2rem;
     display: inline-block;
     position: relative; }
     .tags__item:not(:last-child)::after {
       content: "";
       position: absolute;
       width: 1px;
-      height: 3rem;
+      height: 100%;
       top: 0;
       right: -1.5rem;
       border-right: 1px solid #aeaeae; }
-  .tags__link:link, .tags__link:visited {
-    font-size: 1.4rem;
-    font-weight: 300;
-    padding: 1.6rem .5rem .5rem .5rem;
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: .5rem solid transparent;
-    transition: all .5s; }
-    @media only screen and (max-width: 56.25em) {
-      .tags__link:link, .tags__link:visited {
-        padding: 1.6rem 0 0 0; } }
-  .tags__link:hover, .tags__link:active {
-    border-bottom: 0.5rem solid #b88b58; }
 
 .team {
   background-color: #fff;
